@@ -53,7 +53,7 @@ export class DialogComponent implements OnInit {
     }
     this.service.addStudent(payload).subscribe((res)=>{
       this.dialogRef.close();
-
+      window.location.reload()
     })
 
   }
@@ -69,6 +69,7 @@ export class DialogComponent implements OnInit {
     }
     this.service.editStudent(payload).subscribe((res)=>{
       this.dialogRef.close();
+      window.location.reload()
     })
     
   }
@@ -78,7 +79,7 @@ export class DialogComponent implements OnInit {
     }
     this.service.deleteStudent(payload).subscribe((res)=>{
       this.dialogRef.close()
-    
+      window.location.reload()
       
     })
     
